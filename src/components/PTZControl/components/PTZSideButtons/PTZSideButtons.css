@@ -1,0 +1,46 @@
+.ptz-side-buttons {
+  position: absolute;
+  left: 57.75%;
+  top: 75%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  z-index: 10010;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.ptz-extra-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #0B0C20;
+  border: 3px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  transition: filter 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: 3px solid #fff;
+  background: #05081e;
+  box-shadow: 0 0px 4px 2px #000a;
+}
+
+.ptz-extra-btn:hover {
+  transform: scale(1.1);
+  border-color: #fff;
+}
+
+.ptz-extra-btn:active {
+  transform: scale(0.95);
+  border-color: #fff;
+}
+
+.ptz-extra-btn:focus,
+.ptz-extra-btn:focus-visible {
+  outline: none !important;
+  border-color: #fff;
+} 

@@ -1,0 +1,90 @@
+.ptz-btn {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.ptz-btn:hover {
+  transform: scale(1.1);
+}
+
+.ptz-btn:active {
+  transform: scale(0.95);
+}
+
+.ptz-btn:focus,
+.ptz-btn:focus-visible {
+  outline: none;
+}
+
+.ptz-btn svg {
+  color: #fff;
+  filter: drop-shadow(0px 0px 4px #000a) drop-shadow(0 0 2px #000a);
+}
+
+/* Estilos específicos do botão Home */
+.ptz-btn.home {
+  border: 3px solid #fff;
+  background: #05081e;
+  box-shadow: 0 0px 4px 2px #000a;
+}
+
+.ptz-btn.home svg {
+  filter: none !important;
+}
+
+/* Posições dos botões no círculo */
+.ptz-btn.home {
+  top: 77px;
+  left: 77px;
+}
+
+.ptz-btn.up {
+  top: 17px;
+  left: 77px;
+}
+
+.ptz-btn.up-right {
+  top: 34px;
+  left: 120px;
+}
+
+.ptz-btn.right {
+  top: 77px;
+  left: 137px;
+}
+
+.ptz-btn.down-right {
+  top: 120px;
+  left: 120px;
+}
+
+.ptz-btn.down {
+  top: 137px;
+  left: 77px;
+}
+
+.ptz-btn.down-left {
+  top: 120px;
+  left: 34px;
+}
+
+.ptz-btn.left {
+  top: 77px;
+  left: 17px;
+}
+
+.ptz-btn.up-left {
+  top: 34px;
+  left: 34px;
+} 

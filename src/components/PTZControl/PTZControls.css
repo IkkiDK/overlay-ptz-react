@@ -1,0 +1,30 @@
+.ptz-absolute-area {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 420px;
+  height: 520px;
+  overflow: visible;
+  z-index: 1000;
+}
+
+/* Estilos globais para tooltips */
+[role="tooltip"],
+[data-side] {
+  background: #05081e;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 7px 18px;
+  font-weight: 500;
+  border: 2px solid #fff;
+  z-index: 2147483647 !important;
+  white-space: nowrap;
+  text-align: center;
+  pointer-events: none;
+  box-shadow: 0 0px 2px 2px #000a;
+}
+
+[data-side] svg polygon {
+  fill: none;
+}

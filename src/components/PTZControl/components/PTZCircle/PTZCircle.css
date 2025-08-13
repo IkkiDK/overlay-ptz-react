@@ -1,0 +1,11 @@
+.ptz-control-circle {
+  position: absolute;
+  left: 78%;
+  top: 59%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  pointer-events: auto;
+  overflow: visible !important;
+  z-index: 10000;
+} 

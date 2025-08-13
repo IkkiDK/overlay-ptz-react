@@ -1,0 +1,117 @@
+/* App.css */
+
+body, #root {
+  height: 100vh;
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #101014;
+  color: #fff;
+}
+
+/* Layout principal */
+.app-main-layout {
+  display: flex;
+  height: 100vh;
+  background: #111;
+}
+
+/* Área da câmera */
+.camera-area {
+  flex: 1;
+  position: relative;
+  padding: 20px;
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181928;
+  box-shadow: 0 0 16px #0004;
+  border-radius: 18px;
+  margin: 24px 0 24px 24px;
+  overflow: hidden;
+}
+
+/* Painel lateral */
+.sidebar-panel {
+  width: 350px;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #181928;
+  border-left: 1.5px solid #23243f;
+  box-shadow: 0 0 12px #0004;
+  min-width: 220px;
+  max-width: 360px;
+  gap: 14px;
+}
+
+/* Status do comando */
+.command-status.success {
+  background: #1bc07b17;
+  color: #44eeaf;
+  border-left: 3px solid #1bc07b;
+}
+
+.command-status.error {
+  background: #c01b1b17;
+  color: #ff8686;
+  border-left: 3px solid #c01b1b;
+}
+
+.command-status.loading {
+  background: #22223a;
+  color: #fafcff;
+  border-left: 3px solid #f1e34b;
+}
+
+/* Último comando */
+.last-command {
+  background: #1a1b22;
+  border-radius: 7px;
+  border: 1px solid #23243f;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.last-command h4 {
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .app-main-layout {
+    flex-direction: column;
+  }
+  .sidebar-panel, .camera-area {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 8px !important;
+  }
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff4d4f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 9999;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.toast.hide {
+  opacity: 0;
+}
